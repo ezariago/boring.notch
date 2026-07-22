@@ -36,11 +36,11 @@ jobs:
     env:
       PROJECT_NAME: boringNotch
       EXPORT_METHOD: development
-      VERSION_INPUT: ${{ inputs.version }}
-      BUILD_NUMBER_INPUT: ${{ inputs.build_number }}
-      DEVELOPMENT_TEAM: ${{ vars.DEVELOPMENT_TEAM_ID }}
-      CODE_SIGN_IDENTITY: ${{ inputs.code_sign_identity }}
-      XCODE_VERSION: ${{ inputs.xcode_version }}
+      VERSION_INPUT: "3.0"
+      BUILD_NUMBER_INPUT: "67"
+      DEVELOPMENT_TEAM: "selfbuild"
+      CODE_SIGN_IDENTITY: "notneeded"
+      XCODE_VERSION: "26.5"
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
