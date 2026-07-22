@@ -1,5 +1,6 @@
 name: "Reusable Build"
 on:
+  workflow_dispatch:
   workflow_call:
     inputs:
       head_ref:
